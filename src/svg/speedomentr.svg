@@ -1,0 +1,11 @@
+<svg class="gaugeNew" height="200" width="200" viewBox="0 0 200 200" fill="none" xmlns="https://www.w3.org/2000/svg" style="width:190px; height:190px; padding-top:10px;">
+  <g class="inactive" stroke="#ccc" fill="none" stroke-width="14">
+    <path d="M 53.705682023722694 171.28699827536104 A 85 85 0 1 1 146.2943179762773 171.28699827536104" stroke-dasharray="1.75 7"></path>
+  </g>
+  <g class="gauge-active" stroke="#333" fill="none" stroke-width="14">
+    <path d="M 53.705682023722694 171.28699827536104 A 85 85 0 0 1 21.034706838023922 131.45604037133685" stroke-dasharray="1.75 7"></path>
+  </g>
+  <g class="gauge-indicator" stroke="#F00" stroke-width="4">
+    <path d="M 27.031035646960717 127.55957621671425 L 6.450045701231687 135.33279002142854"></path>
+  </g>
+</svg>

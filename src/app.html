@@ -1,4 +1,80 @@
 <template>
+  <require from="./app.scss"></require>
+  <div class="container">
+    <div class="speed__content">
+        <div class="speed__title">Measurement in progress</div>
+        <div class="speed__sensors-wrapper">
+          <div class="speed__sensors-item">
+            <div class="speed__download-result">
+              <div class="speed__sensors-title">
+                Download
+              </div>
+              <div class="speed__sensors-body">
+                <div class="svg-clock">
+                  <svg class="gaugeNew" height="200" width="200" viewBox="0 0 200 200" fill="none" xmlns="https://www.w3.org/2000/svg" style="width:190px; height:190px; padding-top:10px;">
+                    <g class="inactive" stroke="#ccc" fill="none" stroke-width="14">
+                      <path d="M 53.705682023722694 171.28699827536104 A 85 85 0 1 1 146.2943179762773 171.28699827536104" stroke-dasharray="1.75 7"></path>
+                    </g>
+                    <g class="gauge-active" stroke="#333" fill="none" stroke-width="14">
+                      <path d="M 53.705682023722694 171.28699827536104 A 85 85 0 0 1 21.034706838023922 131.45604037133685" stroke-dasharray="1.75 7"></path>
+                    </g>
+                    <g class="gauge-indicator" stroke="#F00" stroke-width="4">
+                      <path d="M 27.031035646960717 127.55957621671425 L 6.450045701231687 135.33279002142854"></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <div class="speed__sensors-footer">
+                <span class="speed__sensors-footer-title">
+                  Download-Geschwindigkeit
+                </span>
+                <span class="speed__sensors-footer-descriptions">
+                  Gemessen von unserem Server zu Deinem Computer
+                </span>
+              </div>
+
+            </div>
+          </div>
+          <div class="speed__sensors-item">
+            <div class="speed__upload-result">
+              <div class="speed__sensors-title">
+                Upload
+              </div>
+              <div class="speed__sensors-body"></div>
+              <div class="speed__sensors-footer">
+                <span class="speed__sensors-footer-title">
+                  Upload-Geschwindigkeit
+                </span>
+                <span class="speed__sensors-footer-descriptions">
+                  Gemessen von Deinem Computer zu unserem Server
+                </span>
+              </div>
+
+            </div>
+          </div>
+          <div class="speed__sensors-item">
+            <div class="speed__ping-result">
+              <div class="speed__sensors-title">
+                Ping
+              </div>
+              <div class="speed__sensors-body"></div>
+              <div class="speed__sensors-footer">
+                <span class="speed__sensors-footer-title">
+                  Ping
+                </span>
+                <span class="speed__sensors-footer-descriptions">
+                  Reaktionszeit Deines Anschlusses
+                  32 Millisekunden
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
   <h1>${message}</h1>
   <div>
     <label>Width:</label>
@@ -13,7 +89,7 @@
     <input type="range" min="0" max="360" value.bind="rotate">
   </div>
   <svg style="overflow: visible!important;">
-    <rect width.bind="width" height.bind="height" transform="rotate(${rotate}, ${width/2}, ${height/2})" />        
+    <rect width.bind="width" height.bind="height" transform="rotate(${rotate}, ${width/2}, ${height/2})" />
   </svg>
 
   <div>
@@ -35,7 +111,7 @@
   <div style="width: 300px;">
     <temperature-gauge temperature.bind="temperature"></temperature-gauge>
   </div>
-  
+
 
   <div>
     <svg class="gaugeNew" height="200" width="200" viewBox="0 0 200 200" fill="none" xmlns="https://www.w3.org/2000/svg" style="width:190px; height:190px; padding-top:10px;">
